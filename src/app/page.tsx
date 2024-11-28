@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" text-white">
+    <div className=" text-white bg-white">
       {/* Encabezado */}
       <TopMenu />
 

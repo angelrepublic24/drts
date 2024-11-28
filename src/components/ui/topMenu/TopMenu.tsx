@@ -96,14 +96,14 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-1/2 flex flex-col justify-center pl-12 text-left pb-40 ">
-                <h1 className="text-5xl md:text-8xl font-bold mb-6">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40 ">
+                <h1 className="text-2xl md:text-8xl font-bold mb-6">
                   Web Page <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
                 <p className="text-lg md:text-5xl mb-6 text-gray-50">
                   100% for all environments. <br />
                 </p>
-                <p className="text-lg md:text-2xl mb-10 md:w-10/12">
+                <p className="text-md md:text-2xl mb-10 w-full md:w-10/12">
                   We design all types of web pages,
                   and a variety of web applications at your disposal.
                 </p>
@@ -130,8 +130,8 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
-                <h1 className="text-4xl md:text-8xl font-bold mb-6">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40">
+                <h1 className="text-2xl md:text-8xl font-bold mb-6">
                   Custom App <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
                 <p className="text-lg md:text-xl mb-8 text-gray-50">
@@ -161,8 +161,8 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40">
+                <h1 className="text-2xl md:text-6xl font-bold mb-6">
                   Top-notch Technical Support
                 </h1>
                 <p className="text-lg md:text-xl mb-8">
