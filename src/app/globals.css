@@ -12,14 +12,17 @@
 }
 .swiper-pagination {
   position: absolute;
-  bottom: 150px !important; /* Ajusta la distancia del borde inferior */
+  bottom: 110px !important; /* Ajusta la distancia del borde inferior */
   left: 50%;
   transform: translateX(-50%);
 }
-.swiper-pagination-bullet{
+.swiper-pagination .swiper-pagination-bullet{
   width: 20px !important; 
   height: 20px !important;
-  background: '#a5a5a5' !important;
+  background: #d2d2d2 !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+  background: #ffffff !important;
 }
 
 @media (prefers-color-scheme: dark) {

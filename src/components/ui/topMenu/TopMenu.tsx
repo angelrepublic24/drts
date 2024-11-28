@@ -37,7 +37,7 @@ export const TopMenu = () => {
       </header>
 
       {/* Slider */}
-      <section className="h-[calc(100%-6rem)] relative overflow-hidden">
+      <section className="h-[calc(100%-6rem)] relative overflow-hidden py-10">
         <Swiper
           modules={[Autoplay, EffectFade, Pagination]}
           autoplay={{
