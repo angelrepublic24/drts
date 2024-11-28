@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.gradient-background {
+  background: linear-gradient(90deg, #005470 0%, #6CD8C3 100%);
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 150px !important; /* Ajusta la distancia del borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-pagination-bullet{
+  width: 20px !important; 
+  height: 20px !important;
+  background: '#a5a5a5' !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
