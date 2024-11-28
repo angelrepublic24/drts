@@ -1,43 +1,74 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination  } from "swiper/modules";
+import { IoMenuOutline } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
+
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import Image from 'next/image';
 
 export const TopMenu = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen); // Alternar el menú
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <div className="gradient-background" style={{ height: "90vh" }}>
-      {/* Header */}
-      <header className="flex justify-between items-center py-6 px-12">
-        <div className="text-2xl font-bold">
-          <Link href={'/'}>
-            <Image src={'/drts_v2.png'} alt="logo" width={150} height={50}/>
-          </Link>
-          
-        </div>
-        <nav className="space-x-8">
-          <Link href="#services" className="hover:text-teal-200">
+     <header className="flex justify-between items-center py-6 px-12 bg-transparent">
+      {/* Logo */}
+      <div className="text-2xl font-bold">
+        <Link href={'/'}>
+          <Image src={'/drts_v2.png'} alt="logo" width={150} height={50} />
+        </Link>
+      </div>
+
+      {/* Botón de menú para móviles */}
+      <div className="md:hidden">
+        <button
+          className="text-teal-600"
+          onClick={toggleMenu} // Alterna el estado del menú
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? (
+            <IoMdClose className="h-6 w-6" />
+          ) : (
+            <IoMenuOutline className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Navegación */}
+      <nav
+        className={`${
+          menuOpen ? 'block' : 'hidden'
+        } absolute top-16 left-0 w-full shadow-md md:static md:block md:w-auto md:shadow-none md:bg-transparent`}
+      >
+        <div className="md:flex md:space-x-8">
+          <Link href="#services" className="block py-2 px-4 hover:text-teal-200" onClick={closeMenu}>
             Services
           </Link>
-          <Link href="#products" className="hover:text-teal-200">
+          <Link href="#products" className="block py-2 px-4 hover:text-teal-200" onClick={closeMenu}>
             Products
           </Link>
-          <Link href="#about" className="hover:text-teal-200">
+          <Link href="#about" className="block py-2 px-4 hover:text-teal-200" onClick={closeMenu}>
             About Us
           </Link>
-          <Link href="#contact" className="hover:text-teal-200">
+          <Link href="#contact" className="block py-2 px-4 hover:text-teal-200" onClick={closeMenu}>
             Contact
           </Link>
-        </nav>
-        <button className="bg-white text-teal-600 px-6 py-2 rounded-md font-semibold">
-          Get in Touch
-        </button>
-      </header>
+        </div>
+      </nav>
+
+      {/* Botón de contacto */}
+      <button className="hidden md:block bg-white text-teal-600 px-6 py-2 rounded-md font-semibold">
+        Get in Touch
+      </button>
+    </header>
 
       {/* Slider */}
       <section className="h-[calc(100%-6rem)] relative overflow-hidden py-10">
@@ -95,7 +126,7 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
                 <h1 className="text-4xl md:text-8xl font-bold mb-6">
                   Custom App <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
@@ -114,7 +145,7 @@ export const TopMenu = () => {
               </div>
               {/* Imagen */}
               <div
-                className="w-1/2 h-full bg-cover bg-center"
+                className="w-full md:w-1/2 h-full bg-cover bg-center"
                 style={{
                   backgroundImage: "url('/path-to-image2.jpg')", // Reemplaza con tu imagen
                 }}
@@ -126,7 +157,7 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   Top-notch Technical Support
                 </h1>
