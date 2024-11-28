@@ -15,7 +15,10 @@ export const TopMenu = () => {
       {/* Header */}
       <header className="flex justify-between items-center py-6 px-12">
         <div className="text-2xl font-bold">
-          <Image src={'/drts_v2.png'} alt="logo" width={150} height={50}/>
+          <Link href={'/'}>
+            <Image src={'/drts_v2.png'} alt="logo" width={150} height={50}/>
+          </Link>
+          
         </div>
         <nav className="space-x-8">
           <Link href="#services" className="hover:text-teal-200">
@@ -92,11 +95,11 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-1/2 flex flex-col justify-center pl-12 text-left">
+              <div className="w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
                 <h1 className="text-4xl md:text-8xl font-bold mb-6">
                   Custom App <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
-                <p className="text-lg md:text-xl mb-8">
+                <p className="text-lg md:text-xl mb-8 text-gray-50">
                   We develop apps tailored to your specific business needs,
                   ensuring quality and efficiency.
                 </p>
@@ -123,7 +126,7 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-1/2 flex flex-col justify-center pl-12 text-left">
+              <div className="w-1/2 flex flex-col justify-center pl-12 text-left pb-40">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   Top-notch Technical Support
                 </h1>
