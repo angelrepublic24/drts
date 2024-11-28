@@ -30,12 +30,16 @@ export const TopMenu = () => {
       {/* Botón de menú para móviles */}
       <div className="md:hidden">
         <button
-          className="text-teal-600"
-          onClick={toggleMenu} // Alterna el estado del menú
+          className="text-teal-600 px-4"
+          onClick={(event) => {
+            event.stopPropagation()
+            toggleMenu()
+          }} // Alterna el estado del menú
           aria-label="Toggle menu"
+          
         >
           {menuOpen ? (
-            <IoMdClose className="h-6 w-6" />
+            <IoMdClose className="h-6 w-6 mb-2"/>
           ) : (
             <IoMenuOutline className="h-6 w-6" />
           )}
@@ -46,7 +50,7 @@ export const TopMenu = () => {
       <nav
         className={`${
           menuOpen ? 'block' : 'hidden'
-        } absolute top-16 left-0 w-full shadow-md md:static md:block md:w-auto md:shadow-none md:bg-transparent`}
+        } absolute top-32 left-0 w-full shadow-md md:static md:block md:w-auto md:shadow-none md:bg-transparent mt-8 pb-4`}
       >
         <div className="md:flex md:space-x-8">
           <Link href="#services" className="block py-2 px-4 hover:text-teal-200" onClick={closeMenu}>
@@ -116,7 +120,7 @@ export const TopMenu = () => {
               <div
                 className="w-1/2 h-full bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('/path-to-image1.jpg')", // Reemplaza con tu imagen
+                  backgroundImage: "url('')", // Reemplaza con tu imagen
                 }}
               ></div>
             </div>
