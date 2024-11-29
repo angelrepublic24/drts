@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const OurApp = () => {
   const apps = [
-    { img: "/app/ciber.png" },
-    { img: "/app/uasd.png" },
-    { img: "/app/voter.png" },
+    {img: "/app/ciber.png" },
+    {img: "/app/uasd.png" },
+    {img: "/app/voter.png" },
   ];
   return (
     <section id="mobile-apps" className="py-20 bg-white text-teal-600 mx-auto w-3/4">
@@ -28,7 +28,6 @@ export const OurApp = () => {
             <div className="pt-8 w-full overflow-hidden flex justify-center">
               <Link
                 href={""}
-                key={index}
                 className="border border-teal-600 px-2 py-1 w-[40%] rounded-md font-medium text-center text-teal-600 hover:bg-teal-600 hover:text-white mr-4"
               >
                 <div className="flex justify-start">
@@ -44,7 +43,6 @@ export const OurApp = () => {
               </Link>
               <Link
                 href={""}
-                key={index}
                 className="border border-teal-600 px-2 py-1 w-[40%] rounded-md font-medium text-center text-teal-600 hover:bg-teal-600 hover:text-white"
               >
                 <div className="flex justify-start">
