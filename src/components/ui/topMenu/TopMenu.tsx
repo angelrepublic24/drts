@@ -96,8 +96,8 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40 ">
-                <h1 className="text-2xl md:text-8xl font-bold mb-6">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-25 md:pb-35 ">
+                <h1 className="text-xl md:text-6xl font-bold mb-6">
                   Web Page <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
                 <p className="text-lg md:text-5xl mb-6 text-gray-50">
@@ -131,7 +131,7 @@ export const TopMenu = () => {
             <div className="flex h-full">
               {/* Contenido */}
               <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40">
-                <h1 className="text-2xl md:text-8xl font-bold mb-6">
+                <h1 className="text-2xl md:text-6xl font-bold mb-6">
                   Custom App <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
                 <p className="text-lg md:text-xl mb-8 text-gray-50">
