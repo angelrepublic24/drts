@@ -18,12 +18,15 @@ export const TopMenu = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <div className="gradient-background" style={{ height: "90vh" }}>
-     <header className="flex justify-between items-center py-6 px-12 bg-transparent">
+    <div className=" w-full overflow-hidden gradient-background md:bg-darkBlue" style={{ height: "90vh"}}>
+      <div className=" hidden md:block">
+        <Image src={'/slider/odrts.gif' } priority={true} className="absolute w-screen inset-0 md:object-cover slider" width={1920} height={1080} alt="" quality={100}  style={{height: '90vh'}} />
+        </div>
+     <header className="flex justify-between relative z-10 items-center py-6 px-12 bg-transparent">
       {/* Logo */}
       <div className="text-2xl font-bold">
         <Link href={'/'}>
-          <Image src={'/drts_v2.png'} alt="logo" width={150} height={50} />
+          <Image src={'/drts_v2.png'} alt="logo" width={120} height={50} />
         </Link>
       </div>
 
@@ -75,7 +78,7 @@ export const TopMenu = () => {
     </header>
 
       {/* Slider */}
-      <section className="h-[calc(100%-6rem)] relative overflow-hidden py-10">
+      <section className="h-[calc(100%-6rem)] relative overflow-hidden py-0 md:py-10">
         <Swiper
           modules={[Autoplay, EffectFade, Pagination]}
           autoplay={{
@@ -96,7 +99,7 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-25 md:pb-35 ">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-36 md:pb-35 ">
                 <h1 className="text-xl md:text-6xl font-bold mb-6">
                   Web Page <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
@@ -107,8 +110,8 @@ export const TopMenu = () => {
                   We design all types of web pages,
                   and a variety of web applications at your disposal.
                 </p>
-                <div className="flex space-x-4">
-                  <button className="bg-white text-teal-600 px-6 py-3 rounded-md font-medium">
+                <div className="flex space-x-4 w-full">
+                  <button className="bg-white text-teal-600 px-6 py-3 rounded-md md:text-md font-medium">
                     Get Started
                   </button>
                   <button className="border border-white px-6 py-3 rounded-md font-medium">
@@ -117,12 +120,12 @@ export const TopMenu = () => {
                 </div>
               </div>
               {/* Imagen */}
-              <div
+              {/* <div
                 className="w-1/2 h-full bg-cover bg-center"
                 style={{
                   backgroundImage: "url('')", // Reemplaza con tu imagen
                 }}
-              ></div>
+              ></div> */}
             </div>
           </SwiperSlide>
 
@@ -130,11 +133,11 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-36 md:pb-40">
                 <h1 className="text-2xl md:text-6xl font-bold mb-6">
                   Custom App <br /> <p style={{color: '#94eedc'}}>Development</p>
                 </h1>
-                <p className="text-lg md:text-xl mb-8 text-gray-50">
+                <p className="text-lg md:text-xl mb-8 text-gray-50 pr-4">
                   We develop apps tailored to your specific business needs,
                   ensuring quality and efficiency.
                 </p>
@@ -148,12 +151,12 @@ export const TopMenu = () => {
                 </div>
               </div>
               {/* Imagen */}
-              <div
+              {/* <div
                 className="w-full md:w-1/2 h-full bg-cover bg-center"
                 style={{
                   backgroundImage: "url('/path-to-image2.jpg')", // Reemplaza con tu imagen
                 }}
-              ></div>
+              ></div> */}
             </div>
           </SwiperSlide>
 
@@ -161,11 +164,11 @@ export const TopMenu = () => {
           <SwiperSlide>
             <div className="flex h-full">
               {/* Contenido */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-16 md:pb-40">
+              <div className="w-full md:w-1/2 flex flex-col justify-center pl-12 text-left pb-36 md:pb-40">
                 <h1 className="text-2xl md:text-6xl font-bold mb-6">
                   Top-notch Technical Support
                 </h1>
-                <p className="text-lg md:text-xl mb-8">
+                <p className="text-lg md:text-xl mb-8 pr-4">
                   Get access to expert technical support to help you with any
                   challenges.
                 </p>
@@ -179,16 +182,16 @@ export const TopMenu = () => {
                 </div>
               </div>
               {/* Imagen */}
-              <div
+              {/* <div
                 className="w-1/2 h-full bg-cover bg-center"
                 style={{
                   backgroundImage: "url('/path-to-image3.jpg')", // Reemplaza con tu imagen
                 }}
-              ></div>
+              ></div> */}
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-10 md:bottom-4 left-1/2 transform -translate-x-1/2">
           <div className="swiper-pagination"></div>
         </div>
       </section>

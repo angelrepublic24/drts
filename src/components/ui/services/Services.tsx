@@ -19,7 +19,7 @@ export const Service = () => {
         {allservice.map((service, index) => (
             <div key={index} className="bg-white rounded-lg p-6 shadow-md flex flex-col justify-center items-center w-full">
               <div className="flex justify-center bg-teal-50 rounded-full w-36 p-6 mb-4">
-                <Image src={service.img} alt="" width={100} height={100}/>
+                <Image src={service.img} alt="" width={100} height={100} quality={100}/>
               </div>
               <h3 className="text-xl text-center font-semibold mb-4 text-black">{service.title}</h3>
               <p className="text-center">{service.description}</p>

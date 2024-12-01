@@ -9,6 +9,8 @@ export const OurApp = () => {
   ];
   return (
     <section id="mobile-apps" className="py-20 bg-white text-teal-600 mx-auto w-3/4">
+      <p className="text-center text-black font-light mb-2 bg-gray-50 w-40 mx-auto rounded-xl py-1">Our Apps</p>
+
       <h2 className="text-3xl font-bold text-center mb-12">
         Download mobile apps for fast, easy access!
       </h2>

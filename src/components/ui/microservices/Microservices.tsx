@@ -15,7 +15,7 @@ export const Microservices = () => {
           {microservices.map((service, index) => (
             <div key={index} className="bg-white rounded-lg p-6 shadow-md w-full flex flex-col justify-center items-center">
               <div className="flex justify-center bg-teal-50 rounded-full w-20 p-6 mb-4">
-                <Image src={service.img} alt="" width={40} height={40}/>
+                <Image src={service.img} alt="" width={40} height={40} quality={100}/>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-black text-center">{service.title}</h3>
               <p className="text-center text-gray-400">{service.description}</p>

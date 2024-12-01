@@ -30,7 +30,7 @@ export const Footer = () => {
             {/* Columna derecha */}
             <div className="w-full  text-center flex justify-center flex-row my-4 md:my-0">
             <MdEmail className="mt-1 mx-3" />
-            <p className="text-white text-md">angel.almonte@drts.com</p>
+            <p className="text-white text-md">angelalmonte@drts.us</p>
 
             </div>
             <div className="w-full text-center lg:text-right flex flex-row justify-center md:justify-end">

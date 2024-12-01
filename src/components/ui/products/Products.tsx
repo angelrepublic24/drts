@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ProductData } from '../../../data/product';
-import { MdArrowOutward } from "react-icons/md";
+import { GoArrowUpRight } from "react-icons/go";
 
 
 export const Products = () => {
@@ -21,12 +21,13 @@ export const Products = () => {
 
     return (
         <section id="products" className="py-20 bg-white text-teal-800 w-11/12 mx-auto">
+        <p className="text-center text-black font-light mb-2 bg-gray-50 w-40 mx-auto rounded-xl py-1">Our Products</p>
         <h2 className="text-3xl font-bold text-center mb-12">Discover our products and services for you!</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-full px-6">
           {products.map((product, index) => (
             <div key={index} className={`rounded-lg w-full  shadow-md text-center ${product.bg} overflow-hidden`}>
               <div className="flex justify-center rounded-full p-10 mb-4 h-4/6">
-                <Image src={product.img} alt="Eoscmi" width={150} height={120}/>
+                <Image src={product.img} alt="Eoscmi" width={150} height={120} quality={100} loading="lazy" priority={false} />
               </div>
               <div className={`w-full ${product.textbg} p-6 md:h-full grid grid-cols-1 md:grid-cols-2 gap-2`}>
                 <div className="flex justify-start flex-col ml-2 mb-2" >
@@ -34,8 +35,8 @@ export const Products = () => {
                   <p className="text-left pb-2">{product.description}</p>
                 </div>
                 <div className="flex justify-end  md:mr-2">
-                  <div className="bg-emerald-400 md:w-20 md:h-14 rounded-lg flex md:items-center justify-center">
-                  <Link href={`/product/${product.id}`} className=""><MdArrowOutward size={25} style={{color: 'white'}}/></Link>
+                  <div className="bg-emerald-400 w-12 h-12 rounded-lg flex md:items-center justify-center">
+                  <Link href={`/product/${product.id}`} className=""><GoArrowUpRight size={25} style={{color: 'white'}}/></Link>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="text-teal-600 w-11/12 mx-auto rounded-3xl"
+      className="text-teal-600 w-11/12 mx-auto rounded-3xl py-4"
       style={{ background: "#e4fcf7" }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2">
@@ -17,7 +17,7 @@ export const About = () => {
             className="rounded-xl w-3/4 h-3/4"
           />
         </div>
-        <div className="max-w-6xl mx-auto px-6 text-center flex justify-center flex-col h-full">
+        <div className="max-w-6xl mx-auto px-6 text-center flex items-center md:items-start justify-center flex-col h-full">
         <p className="text-center text-black font-light mb-2 bg-gray-50 w-32 rounded-xl py-1">About us</p>
 
           <h2 className="text-3xl font-bold text-left mb-12">
