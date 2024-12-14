@@ -47,14 +47,14 @@ export const Contact = () => {
                             type="text"
                             name="firstName"
                             placeholder="First Name*"
-                            className="border rounded-lg px-4 py-3 w-1/2 mr-3"
+                            className="border rounded-lg px-4 py-3 w-1/2 mr-3 text-black"
                             required
                         />
                         <input
                             type="text"
                             name="lastName"
                             placeholder="Last Name"
-                            className="border rounded-lg px-4 py-3 w-1/2"
+                            className="border rounded-lg px-4 py-3 w-1/2 text-black"
                         />
                     </div>
                     <div className="flex flex-col mb-6">
@@ -62,14 +62,14 @@ export const Contact = () => {
                             type="email"
                             name="email"
                             placeholder="Email*"
-                            className="border rounded-lg px-4 py-3 mb-4"
+                            className="border rounded-lg px-4 py-3 mb-4 text-black"
                             required
                         />
                         <input
                             type="tel"
                             name="phone"
                             placeholder="Phone"
-                            className="border rounded-lg px-4 py-3"
+                            className="border rounded-lg px-4 py-3 text-black" 
                         />
                     </div>
                     <textarea
