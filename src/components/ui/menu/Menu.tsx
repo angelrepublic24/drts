@@ -65,16 +65,16 @@ export const Menu = () => {
           <Link href="#about" className="block py-2 px-4 hover:text-teal-200" onClick={(e) => handleNavigation(e, 'about')}>
             About Us
           </Link>
-          <Link href="#contact" className="block py-2 px-4 hover:text-teal-200" onClick={(e) => handleNavigation(e, 'contact')}>
-            Contact
+          <Link href="#customers" className="block py-2 px-4 hover:text-teal-200" onClick={(e) => handleNavigation(e, 'customers')}>
+            Customers
           </Link>
         </div>
       </nav>
 
       {/* Botón de contacto */}
-      <button className="hidden md:block bg-white text-teal-600 px-6 py-2 rounded-md font-semibold">
-        Get in Touch
-      </button>
+      <Link href="#contact" className="hidden md:block bg-white text-teal-600 px-6 py-2 rounded-md font-semibold " onClick={(e) => handleNavigation(e, 'contact')}>
+        Contact Us
+      </Link>
     </header>
     </div>
     )
