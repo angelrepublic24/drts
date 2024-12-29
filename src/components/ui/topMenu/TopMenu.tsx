@@ -90,19 +90,19 @@ export const TopMenu = () => {
               About Us
             </Link>
             <Link
-              href="#contact"
+              href="#customers"
               className="block py-2 px-4 hover:text-teal-200"
               onClick={closeMenu}
             >
-              Contact
+              Customers
             </Link>
           </div>
         </nav>
 
         {/* Botón de contacto */}
-        <button className="hidden md:block bg-white text-teal-600 px-6 py-2 rounded-md font-semibold">
-          Get in Touch
-        </button>
+        <Link href="#contact" className="hidden md:block bg-white text-teal-600 px-6 py-2 rounded-md font-semibold">
+          Contact us
+        </Link>
       </header>
 
       {/* Slider */}

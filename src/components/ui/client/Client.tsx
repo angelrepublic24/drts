@@ -30,7 +30,7 @@ export const Client = () => {
   ]
 
     return (
-        <section id="clients" className="py-20 bg-white text-teal-600 w-full">
+        <section id="customers" className="py-20 bg-white text-teal-600 w-full">
         <p className="text-center text-black font-light mb-2 bg-gray-50 w-40 mx-auto rounded-xl py-1">Our Clients</p>
         <h2 className="text-3xl font-bold text-center mb-12">Our clients trust us to deliver excellence!</h2>
         <div className="grid grid-cols-2 md:grid-cols-5 px-8 w-full justify-around ">

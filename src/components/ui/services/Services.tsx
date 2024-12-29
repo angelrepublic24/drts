@@ -5,7 +5,7 @@ export const Service = () => {
 
   const allservice = [
     { title: "Web page design", description: "We design all types of web pages, both static and dynamic.", img:'/services/Monitor2.png'},
-    { title: "Android App development", description: "Customized to your needs.", img: '/services/smartphone.png' },
+    { title: "Mobile app development", description: "Customized to your needs.", img: '/services/smartphone.png' },
     { title: "Support in application development", description: "We handle a wide variety of languages.", img: '/services/settings.png' },
     { title: "Development of custom systems", description: "Tailored systems to meet client needs.", img: '/services/laptop.png' },
     { title: "Technical support", description: "Professional and fast support.", img: '/services/shieldUser.png' },
