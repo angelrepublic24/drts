@@ -34,8 +34,8 @@ export const Footer = () => {
 
             </div>
             <div className="w-full text-center lg:text-right flex flex-row justify-center md:justify-end">
-            <Link className="p-2 mx-4 bg-slate-50 rounded-lg" href={''}><FaXTwitter style={{color: 'black'}}/></Link>
-             <Link className="p-2 bg-slate-50 rounded-lg" href={''}><FaFacebook style={{color: 'blue'}}/></Link>
+            <Link className="p-2 mx-4 bg-slate-50 rounded-lg" href={'https://x.com/DevRts'}><FaXTwitter style={{color: 'black'}}/></Link>
+             <Link className="p-2 bg-slate-50 rounded-lg" href={'https://www.facebook.com/people/Development-Real-Time-Strategy/61569496027928/'}><FaFacebook style={{color: 'blue'}}/></Link>
              <Link className="p-2 mx-4 bg-slate-50 rounded-lg" href={'https://www.instagram.com/dev_rts/'}><FaSquareInstagram style={{color: 'red'}}/></Link>
              <Link className="p-2 bg-slate-50 rounded-lg" href={'https://www.linkedin.com/company/development-real-time-strategy'}><FaLinkedin style={{color: '#0A66C2'}}/></Link>
             </div>

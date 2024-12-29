@@ -26,6 +26,24 @@
   background: #ffffff !important;
 }
 
+.product-description h3 {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Estilos para ul y li */
+.product-description ul {
+  list-style-type: disc; /* Esto agrega los puntos para listas desordenadas */
+  margin-left: 1.5rem;   /* Indenta la lista */
+  margin-top: 1rem;      /* Espaciado superior */
+}
+
+.product-description li {
+  margin-bottom: 0.5rem; /* Espaciado entre los elementos de la lista */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

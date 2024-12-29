@@ -23,12 +23,16 @@ export default function(){
         <Menu/>
         <div className="bg-white container mx-auto py-10">
                 <div key={product.id} className="grid grid-cols-1 md:grid-cols-2  gap-8 px-6 ">
-                    <div> 
-                        <Image src={product.img} width={200} height={200} alt=""/>
+                    <div className=" flex justify-center"> 
+                        <Image src={product.img} width={200} height={200} quality={100} alt={product.name} className="w-1/2 h-[300px] lg:h-1/2" />
                     </div>
                     <div>
-                        <h2>{product.name}</h2>
-                        <p>{product.description}</p>
+                        <h2 className="text-4xl mb-4">{product.name}</h2>
+                        <h3 className="text-2xl my-2">{product.subtitle}</h3>
+                        <div
+                            className="product-description text-gray-800 text-lg p-2 leading-10 "
+                            dangerouslySetInnerHTML={{ __html: product.description }}
+                        ></div>
                     </div>
                 </div>
         </div>
