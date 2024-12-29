@@ -3,7 +3,7 @@ import Image from "next/image"
 export const Client = () => {
 
   const clients = [
-    {img: '/client/drts.png', bg: 'bg-[#001427]'},
+    // {img: '/client/drts.png', bg: 'bg-[#001427]'},
     {img: '/client/suple.png'},
     {img: '/client/flores.png'},
     {img: '/client/liriano.png', bg: 'bg-[#ebebeb]'},
@@ -18,7 +18,7 @@ export const Client = () => {
     {img: '/client/jjauto.png', bg: 'bg-[#0b1222]'},
     {img: '/client/civc.png'},
     {img: '/client/nexxo.png'},
-    {img: '/client/nextTv.png'},
+    {img: '/client/next_tv.png'},
     {img: '/client/ouitv.png'},
     {img: '/client/tele.png'},
     {img: '/client/tvMax.png'},

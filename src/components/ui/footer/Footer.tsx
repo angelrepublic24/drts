@@ -44,7 +44,7 @@ export const Footer = () => {
           {/* Barra inferior */}
           <div className="mt-12 border-t border-gray-700 pt-4 text-center">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Your Company. All rights reserved.
+              © {new Date().getFullYear()} DRTS. All rights reserved.
             </p>
           </div>
         </div>
