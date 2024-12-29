@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Development Real-Time Strategy Solutions',
     images: [
       {
-        url: '/drts_v2.png', // Ensure this file exists in the `public` directory
+        url: '/drts_v2.jpg', // Ensure this file exists in the `public` directory
         width: 1200,
         height: 630,
         alt: 'DRTS logo - Development Real-Time Strategy Solutions',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     creator: '@DevRts',
     title: 'Development Real-Time Strategy Solutions | DRTS',
     description: 'Discover innovative real-time strategy solutions to elevate your business performance and growth.',
-    images: '/drts_v2.png',
+    images: '/drts_v2.jpg',
   },
 };
 
