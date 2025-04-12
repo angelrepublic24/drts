@@ -23,9 +23,9 @@ export const TopMenu = () => {
       className=" w-full overflow-hidden gradient-background md:bg-[#000a1b]"
       style={{ height: "90vh" }}
     >
-      <div className=" hidden md:hidden">
+      <div className="">
         <Image
-          src={"/slider/odrts.gif"}
+          src={"/slider/diamond2.gif"}
           priority={true}
           className="absolute w-screen inset-0 md:object-cover slider "
           width={500}
