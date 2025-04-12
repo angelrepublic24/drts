@@ -20,7 +20,7 @@ export const TopMenu = () => {
 
   return (
     <div
-      className="w-full overflow-hidden bg-[#000a1b] md:bg-[url('/diamond2.gif')] bg-no-repeat bg-contain bg-center"
+      className="w-full overflow-hidden gradient-background md:bg-[#000a1b]"
       style={{ height: "90vh" }}
     >
 {/*       <div className="">
