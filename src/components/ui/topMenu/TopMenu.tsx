@@ -20,10 +20,10 @@ export const TopMenu = () => {
 
   return (
     <div
-      className=" w-full overflow-hidden gradient-background md:bg-[#000a1b]"
+      className=" w-full overflow-hidden gradient-background md:bg-[url('/diamond2.gif')]"
       style={{ height: "90vh" }}
     >
-      <div className="">
+{/*       <div className="">
         <Image
           src={"/diamond2.gif"}
           priority={true}
@@ -34,7 +34,7 @@ export const TopMenu = () => {
           quality={100}
           style={{ height: "90vh", imageRendering: "crisp-edges" }}
         />
-      </div>
+      </div> */}
       <header className="flex justify-between relative z-10 items-center py-6 px-12 bg-transparent">
         {/* Logo */}
         <div className="text-2xl font-bold">
