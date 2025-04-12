@@ -25,7 +25,7 @@ export const TopMenu = () => {
     >
       <div className="">
         <Image
-          src={"/slider/diamond2.gif"}
+          src={"/diamond2.gif"}
           priority={true}
           className="absolute w-screen inset-0 md:object-cover slider "
           width={500}
