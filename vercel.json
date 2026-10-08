@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo 'Old site retired: no install needed'",
+  "buildCommand": "echo 'Old site retired: redirect only'",
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/product/:id", "destination": "https://www.drts.us/product/:id", "permanent": true },
+    { "source": "/(.*)", "destination": "https://www.drts.us/", "permanent": true }
+  ]
+}
